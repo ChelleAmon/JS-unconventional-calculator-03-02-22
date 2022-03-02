@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/app.js" defer></script>
+    <!-- <script src="./js/app2.js" defer></script> -->
+
+    <title>Unconventional Calculator</title>
+</head>
+<body>
+    <div class="container-md">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <h3 class="text-align-center">Unconventional Calculator</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <input type="text" value="0" id="firstVal">
+                <input type="text" value="0" id="secondVal">
+            </div>
+            <div class="col-lg-12 col-sm-12">
+                <span class="output"></span>
+            </div>
+            <div class="col-lg-12 col-sm-12 ">
+                <span class="output2"></span>
+            </div>
+        </div>
+        <!-- <div class="operators col-md-12 col-sm-6">
+            <button type="button" class="btn btn-outline-primary">+</button>
+            <button type="button" class="btn btn-outline-primary">-</button>
+            <button type="button" class="btn btn-outline-primary">*</button>
+            <button type="button" class="btn btn-outline-primary">/</button>
+            <button type="button" class="btn btn-outline-primary">%</button>
+        </div> -->
+        <!-- <div class="operators col-md-12 col-sm-6">
+            <button type="button" class="btn btn-outline-primary" onClick="arithmetic(firstVal.value, secondVal.value, add)">+</button>
+            <button type="button" class="btn btn-outline-primary" onClick="arithmetic(firstVal.value, secondVal.value, subtract)">-</button>
+            <button type="button" class="btn btn-outline-primary" onClick="arithmetic(firstVal.value, secondVal.value, multiply)">*</button>
+            <button type="button" class="btn btn-outline-primary" onClick="arithmetic(firstVal.value, secondVal.value, divide)">/</button>
+        </div> -->
+
+        <div class="row-cols-sm-6 div-operator">
+            <div class="operators col-md-12 col-sm-6 ">
+                <button type="button" class="btn-lg btn-outline-primary btn" onClick="add()">+</button>
+                <button type="button" class="btn btn-outline-primary" onClick="subtract()">-</button>
+                <button type="button" class="btn btn-outline-primary" onClick="multiply()">*</button>
+                <button type="button" class="btn btn-outline-primary" onClick="division()">/</button>
+                <button type="button" class="btn btn-outline-primary" onClick="modulus()">%</button>
+                <button type="button" class="btn btn-outline-primary" onClick="random()">Random</button>
+            </div>
+    
+            <div class="exponential col-md-12 col-sm-6 ">
+                <button type="button" class="btn btn-outline-danger" onClick="exponent()">Math.pow(x,y)</button>
+                <button type="button" class="btn btn-outline-danger" onClick="squareRoot()">Math.sqrt(x)</button>
+                <button type="button" class="btn btn-outline-danger" onClick="cubeRoot()">Math.cbrt(x)</button>
+            </div>
+    
+            <div class="algebraic col-md-12 col-sm-6 ">
+                <button type="button" class="btn btn-outline-success" onClick="absolute()">Math.abs(x)</button>
+                <button type="button" class="btn btn-outline-success" onClick="ceil()">Math.ceil(x)</button>
+                <button type="button" class="btn btn-outline-success" onClick="floor()">Math.floor(x)</button>
+                <button type="button" class="btn btn-outline-success" onClick="round()">Math.round(x)</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
