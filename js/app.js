@@ -4,6 +4,7 @@ const secondVal = document.querySelector("#secondVal")
 const output = document.querySelector(".output")
 const output2 = document.querySelector(".output2")
 
+
 function add(){
     let a = Number(firstVal.value)
     let b = Number(secondVal.value)
@@ -52,7 +53,7 @@ function random(){
 
 function exponent(){
     // output.innerHTML = BigInt(firstVal.value) ** BigInt(secondVal.value)
-    output.innerHTML = Math.pow(BigInt(firstVal.value), BigInt(secondVal.value))
+    output.innerHTML = Math.pow(Number(firstVal.value), Number(secondVal.value))
     output2.innerHTML = ""
 }
 
@@ -71,8 +72,8 @@ function absolute(){
     let b = Number(secondVal.value)
     let c = a - b
 
-    output.innerHTML = Math.abs(c)
-    output2.innerHTML = ""
+    output.innerHTML = "without Math.absolute: " + c
+    output2.innerHTML = "with Math.absolute: " + Math.abs(c)
 }
 
 function ceil(){
@@ -80,8 +81,8 @@ function ceil(){
     let b = Number(secondVal.value)
     let c = a / b
 
-    output.innerHTML = Math.ceil(c)
-    output2.innerHTML = ""
+    output.innerHTML = "without Math.ceil: " + c
+    output2.innerHTML = "with Math.ceil: " + Math.ceil(c)
 }
 
 function floor(){
@@ -89,8 +90,8 @@ function floor(){
     let b = Number(secondVal.value)
     let c = a / b
 
-    output.innerHTML = Math.floor(c)
-    output2.innerHTML = ""
+    output.innerHTML = "without Math.floor: " + c
+    output2.innerHTML = "with Math.floor: " +  Math.floor(c)
 }
 
 function round(){
@@ -98,6 +99,6 @@ function round(){
     let b = Number(secondVal.value)
     let c = a / b
 
-    output.innerHTML = Math.round(c)
-    output2.innerHTML = ""
+    output.innerHTML = "without Math.round: " + c
+    output2.innerHTML = "with Math.round: " + Math.round(c)
 }
